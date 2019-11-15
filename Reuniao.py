@@ -25,7 +25,11 @@ class Reuniao:
         return self.local
 
     def setParticipantes(self,participante):
-        self.participantes.append(participante)
+        self.participantes = participante
 
     def getParticipantes(self):
         return self.participantes
+
+    def __repr__(self):
+        return f'A reunião será no dia: {self.getDataReuniao()}\nLocal: {self.getLocal()}\nA ata da reunião será: {self.getAta()}\nCom os seguintes participantes\n{self.getParticipantes()}'
+

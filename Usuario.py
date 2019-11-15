@@ -43,3 +43,6 @@ class Usuario(object):
 
     def getEndereco(self):
         return self.endereco
+
+    def __repr__(self):
+        return f'{self.getNome()}\n Email: {self.getEmail()}\n Endereço: {self.getEndereco()}\n'
