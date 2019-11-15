@@ -31,10 +31,15 @@ def main():
 
     gr = GerenciaReuniao.GerenciaReuniao()
 
-    print(gr.criarReuniao(participant,"Local a","14/11/2019","Ata desconhecida"))
+    r = gr.criarReuniao(participant,"Local a","19/11/2019","Ata desconhecida")
 
-    r2 = gr.criarReuniao(participant,"Local a","14/11/2019","Ata desconhecida")
+    r2 = gr.criarReuniao(participant,"Local master","25/11/2019","Ata desconectada")
 
-    print(gr.editarAta(r2,'Ata Conhecida'))
+    reunioes = []
+    reunioes.append(r)
+    reunioes.append(r2)
+    gr.listarReunioes(reunioes)
+
+    #print(gr.editarAta(r2,'Ata Conhecida'))
 
 main()

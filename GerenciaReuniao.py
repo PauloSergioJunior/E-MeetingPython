@@ -14,5 +14,15 @@ class GerenciaReuniao:
         return r
         
     def editarAta(self, reuniao,ata):
+        """
+        :type = object
+        :param reuniao:
+        :param ata:
+        :return: reunião com a ata alterada
+        """
         reuniao.setAta(ata)
         return reuniao
+
+    def listarReunioes(self,listaR):
+        for r in listaR:
+            print(r)
